@@ -4,6 +4,7 @@ import "taro-ui/dist/style/components/button.scss";
 import { css, cx } from "@linaria/core";
 import { useRecoilState } from "recoil";
 import { testState } from "../../store/store";
+import FartGrid from "../../components/FartGrid";
 
 const test = css`
   color: red;
@@ -16,12 +17,8 @@ export default function Index() {
       className={css`
         color: pink;
       `}
-      onClick={() => {
-        setTestRecoil("testtttt");
-      }}
     >
-      {testRecoil}
-      123
+      <FartGrid />
     </View>
   );
 }
