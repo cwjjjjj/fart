@@ -1,4 +1,3 @@
-import "taro-ui/dist/style/index.scss"; // 引入组件样式 - 方式一
 import { Component, PropsWithChildren } from "react";
 import "./app.scss";
 

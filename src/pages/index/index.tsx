@@ -1,22 +1,13 @@
-import { Component, PropsWithChildren } from "react";
-import { View, Text } from "@tarojs/components";
+import { Button as BasicButton, View } from "@tarojs/components";
+import { AtButton } from "taro-ui";
+import "taro-ui/dist/style/components/button.scss";
 
-export default class Index extends Component<PropsWithChildren> {
-  componentWillMount() {}
-
-  componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  componentDidShow() {}
-
-  componentDidHide() {}
-
-  render() {
-    return (
-      <View>
-        <Text>Hello world!</Text>
-      </View>
-    );
-  }
+export default function index() {
+  return (
+    <View>
+      index
+      <BasicButton>basic button</BasicButton>
+      <AtButton>按钮文案</AtButton>
+    </View>
+  );
 }
