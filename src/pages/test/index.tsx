@@ -1,5 +1,6 @@
 import { View } from "@tarojs/components";
+import styles from "./index.module.scss";
 
 export default function index() {
-  return <View>index</View>;
+  return <View className={styles.test}>index</View>;
 }
