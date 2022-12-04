@@ -8,9 +8,9 @@ export default defineAppConfig({
   },
   tabBar: {
     custom: false,
-    color: "#0000ff",
-    selectedColor: "#00ff00",
-    backgroundColor: "#ff0000",
+    color: "#000",
+    selectedColor: "#00ffff",
+    backgroundColor: "transparent",
     list: [
       {
         pagePath: "pages/index/index",
