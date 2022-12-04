@@ -14,15 +14,15 @@ export default defineAppConfig({
     list: [
       {
         pagePath: "pages/index/index",
-        text: "组件",
-        iconPath: "./assets/positive.png",
-        selectedIconPath: "./assets/icon-close.png",
+        text: "主页",
+        iconPath: "./assets/haha.png",
+        selectedIconPath: "./assets/mask.png",
       },
       {
         pagePath: "pages/test/index",
-        text: "接口",
-        iconPath: "./assets/negative.png",
-        selectedIconPath: "./assets/negative.png",
+        text: "我的",
+        iconPath: "./assets/smell.png",
+        selectedIconPath: "./assets/x_x.png",
       },
     ],
   },
