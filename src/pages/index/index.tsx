@@ -2,21 +2,26 @@ import { Button as BasicButton, View } from "@tarojs/components";
 import { AtButton } from "taro-ui";
 import "taro-ui/dist/style/components/button.scss";
 import { css, cx } from "@linaria/core";
+import { useRecoilState } from "recoil";
+import { testState } from "../../store/store";
 
 const test = css`
   color: red;
 `;
 
-export default function index() {
+export default function Index() {
+  const [testRecoil, setTestRecoil] = useRecoilState(testState);
   return (
     <View
       className={css`
         color: pink;
       `}
+      onClick={() => {
+        setTestRecoil("testtttt");
+      }}
     >
-      index
-      <BasicButton>basic button</BasicButton>
-      <AtButton>按钮文案</AtButton>
+      {testRecoil}
+      123
     </View>
   );
 }
